@@ -3,7 +3,7 @@
     /* colors */
         /* menu texts */
         --passivetext: rgb(209, 171, 75);
-        --activetext: rgb(255, 245, 238);
+        --activetext: #fff5ee;
         /* body texts */
         --contenttext: rgb(29, 28, 27);
         --headingtext: rgb(112, 81, 3);
@@ -723,3 +723,29 @@
           } 
     
       }
+footer {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center;  
+    padding: 1rem;
+    background-color: var(--backblack);
+    color:var(--backgold);
+}
+.footericon{
+    display: flex; 
+    align-items: center;
+    height: 80px;
+    
+}
+
+
+.iconlink {
+    width: 90%;
+    height: 50%;
+    margin-bottom: 30%;
+}
+
+.iconlink:hover {
+    border: 1px solid var(--backgold);
+}
