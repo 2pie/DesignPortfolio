@@ -72,6 +72,7 @@
         justify-content: space-between;
         align-items: center;
         padding: 10px 30px;
+        padding-right: 10%;
         background-color:  rgba(0, 0, 0, 0.863);
         
     }
@@ -82,23 +83,33 @@
         font-size: 16px;
     
     }
+
+    .nav-links{
+        padding-left: 0% !important;
+        /* background-color: aqua; */
+
+    }
     
     nav .nav-links ul {
         display: flex;
         flex-direction: row;
-        padding-right: 100% !important;
-        /* right: 100%; */
+        margin: 3%;
+        margin-left: 0%;
+        padding-left: 0%;
+
     
     }
     
     nav .nav-links ul li {
-        padding:  10px;
+        /* padding:  10px; */
         
         list-style: none;
         font-size: 1.0em;
         color: var(--passivetext);
         /* background-color: aqua;     */
         margin: auto;
+        padding: 10px;
+        right: 10%;
         
         
       
@@ -125,19 +136,19 @@
         width: 100%;
         height: 10%; }
     
-    
-    /* experiment zone */
-    
-    
-    
-    /* @media screen and (max-width: 768px) {
-    #sectionone {display:none;}
-    } */
+
+
+    /* tablet navigation */
+
+
+        /* @media screen and (max-width: 992px) {
     
     
-    
-    
-    /* closed */
+            .nav{
+                width:10vh; 
+            }
+            } */
+        
     
     
     
@@ -424,27 +435,42 @@
     
     
     .page2 {
-        width:fit-content;
-         height:fit-content;
+        width:100%;
+        height:fit-content;
         padding: 2%;
-       
-        background-color: var(--backwhite);
+       /* margin-bottom: 10%;
+       margin-top: 10%; */
+        /* background-color: var(--backwhite); */
         /* background: linear-gradient(-45deg, #fffae1, #ddedf7, #f2cee1, #ecd9ca);  */
+        background: linear-gradient(0deg, rgb(26, 26, 26), rgb(0, 0, 0)); 
         animation: gradient 15s ease infinite;
+
+        padding-top: 5%;
+        
     }
     
     .page2 h1 {
-    color: var(--headingtext);
+    
+    /* padding-left: 3%; */
+    text-align: left !important;
+    display: flex;
+    padding-left: 3%;
+    color:rgba(255, 228, 196, 0.607);
+
     }
     
+    .row{
+        width:95%;
+    }
+
     .column {
         display: flex;
         float: left;
-        width: 30%;
+        width: 29%;
         height: 40%;
         
         margin-top: 2%;
-        margin-left: 2%;
+        margin-left: 3%;
        
         background-color: var(--backwhite);
         border-radius: 15px;
@@ -456,6 +482,10 @@
 
 
     @media screen and (max-width: 992px) {
+        .page2{
+            /* margin-bottom: 10%; */
+            /* margin-top: 10%; */
+        }
         .column {
           width: 45%;
           margin-top: 3%;
@@ -464,6 +494,10 @@
       }
 
     @media screen and (max-width: 600px) {
+        .row{
+            width:90%;
+        }
+        
         .column {
           width: 100%;
           margin-top: 5%;
@@ -587,26 +621,25 @@
       .page4 {
         width: 100%;
         height: 90vh;
-        padding-top: 10%;
+        padding-top: 5%;
         padding-left: 2%;
-        /* top: 200vh; */
-       
-        /* background-color: var(--backwhite); */
         background: linear-gradient(180deg, rgb(26, 26, 26), rgb(222, 212, 197)); 
         animation: gradient 5s ease infinite;
     } 
     
     .page4 h1{
-        
-        /* font-size: 5em; */
-          padding-left: 3%;
-          color: var(--backgold);
+        display: flex;
+        text-align: left !important;
+        padding-left: 3%;
+        color: var(--backgold);
     
     }
     
     .container4 {
         display: flex;
         width: 60%;
+        padding-left: 2%;
+
       }
     
      
@@ -615,7 +648,7 @@
       .item4 {
         background-color:rgba(26, 26, 26, 0.377);
         flex-basis: 40%;
-        height: 500px;
+        height: fit-content;
         margin: 3%; 
         border-radius: 2%; 
       } 
@@ -649,6 +682,12 @@
     
     
     @media screen and (max-width: 992px) {
+        .page4{
+            width: 100%;
+            height: 100%;
+            padding-top: 2%;
+        }
+
         .feather {
           display: none;
         }
@@ -663,6 +702,9 @@
             font-size: 3em;
             padding: 3%;
             margin-top: 1%;
+            margin-left: 1%;
+
+            
         }
     
         .item4 {
@@ -676,7 +718,7 @@
           .item4 ul {
             padding: 8%;
             line-height: 280%;
-            font-size: 200%;
+            font-size: 28px;
             color: var(--activetext);
         
           } 
@@ -725,9 +767,11 @@
       }
 footer {
     display: flex; 
+    height: fit-content;
+    width: 100%;
     flex-direction: column; 
     align-items: center; 
-    text-align: center;  
+    /* text-align: center;   */
     padding: 1rem;
     background-color: var(--backblack);
     color:var(--backgold);
